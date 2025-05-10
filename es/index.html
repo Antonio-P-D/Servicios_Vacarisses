@@ -6,7 +6,7 @@
     <meta name="description" content="Descubre Vacarisses, un encantador pueblo con historia, naturaleza y tradiciones únicas. Ven y explora sus paisajes y cultura.">
     <title>Servicios en Vacarisses</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="servicios.css">
+    <link rel="stylesheet" type="text/css" href="../css/servicios.css">
 
     <style type="text/css">
         main {
@@ -105,7 +105,7 @@
 <header>
   <div class="contenedor-imagenes">
     <figure class="imagen bandera">
-      <img src="imagenes/Bandera_de_Vacarisses.png" alt="bandera de Vacarisses" />
+      <img src="../imagenes/Bandera_de_Vacarisses.png" alt="bandera de Vacarisses" />
     </figure> 
 
     <div class="cont-h1">
@@ -114,13 +114,17 @@
     </div>
     
     <figure class="imagen torrota">
-      <img src="imagenes/la-torrota-de-vacarissesp.jpg" alt="imagen de la torrota de Vacarisses" />
+      <img src="../imagenes/la-torrota-de-vacarissesp.jpg" alt="imagen de la torrota de Vacarisses" />
     </figure>
   </div>
 
-  <div class="selector-idioma">
-  <button onclick="cambiarIdioma('es')">ES</button>
-  <button onclick="cambiarIdioma('ca')">CA</button>
+<div class="selector-idioma">
+  <form action="../es/index.html" method="get" style="display:inline;">
+  <button type="submit" class="btn-idioma">ES</button>
+  </form>
+  <form action="../ca/index.html" method="get" style="display:inline;">
+  <button type="submit" class="btn-idioma">CA</button>
+  </form>
 </div>
 
 </header>
@@ -194,7 +198,7 @@
       Además, esta web está pensada para crecer contigo. Si eres profesional, emprendedor o tienes un comercio local, puedes formar parte de este directorio para darte a conocer y llegar a más personas interesadas en tus servicios. Cuanto más visibles seamos, más fuerte será nuestra comunidad.
     </p>
 
-    <a href="vacarisas.html" class="boton-leer">Leer más sobre Vacarisess</a>
+    <a href="es/vacarisas.html" class="boton-leer">Leer más sobre Vacarisess</a>
 </div>
 
 </main>
@@ -221,7 +225,7 @@
   <button id="acceptCookies" style="margin-top: 10px; padding: 10px 20px; background-color: #E5C100; border: none; border-radius: 5px; cursor: pointer;">Aceptar</button>
 </div>
 
-<script type="text/javascript" src="servicios.js"></script>
+<script type="text/javascript" src="../js/servicios.js"></script>
 
 </body>
 </html>

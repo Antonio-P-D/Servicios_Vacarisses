@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Descobreix Vacarisses, un encantador poble amb història, naturalesa i tradicions úniques. Vine i explora els seus paisatges i cultura.">
+	<title>Serveis a Vacarisses</title>
+	 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/servicios.css">
+
+    <style type="text/css">
+        main {
+            background-image: url(imagenes/FondoDelMain.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            height: auto;
+            width: 100%;
+            padding: 60px 20px 20px;
+            box-sizing: border-box;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s ease;
+            will-change: opacity, transform;
+        }
+
+        .contenido-vacarisses {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #E5C100;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .boton-leer {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            background-color: #fff;
+            color: #000;
+            padding: 15px 30px;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .boton-leer:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .contenido-vacarisses p {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        .contenido-vacarisses h2 {
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeInUp 1s forwards;
+            animation-delay: 0.5s;
+        }
+
+        .contenido-vacarisses h2, .contenido-vacarisses p {
+            animation: slideIn 1s ease-out forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+</style>
+</head>
+
+<body>
+<header>
+  <div class="contenedor-imagenes">
+    <figure class="imagen bandera">
+      <img src="../imagenes/Bandera_de_Vacarisses.png" alt="bandera de Vacarisses" />
+    </figure> 
+    
+    <div class="cont-h1">
+        <h1>Serveis a Vacarisses</h1>
+        <p class="subtitulo">Connectant persones amb solucions locals</p>
+    </div>
+    
+    <figure class="imagen torrota">
+      <img src="../imagenes/la-torrota-de-vacarissesp.jpg" alt="imatge de la torrota de Vacarisses" />
+    </figure>
+  </div>
+
+<div class="selector-idioma">
+  <form action="../es/index.html" method="get" style="display:inline;">
+  <button type="submit" class="btn-idioma">ES</button>
+  </form>
+  <form action="../ca/index.html" method="get" style="display:inline;">
+  <button type="submit" class="btn-idioma">CA</button>
+  </form>
+</div>
+
+</header>
+
+<button id="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+<nav id="menu">
+
+<nav>
+   <ul>
+        <li><a href="index.html">Inici <span>&#x25BC;</span></a>
+            <ul>
+                <li><a href="ca/index.html">Inici</a></li>
+                <li><a href="ca/quienes_somos.html" target="_blank">Qui som</a></li>
+                <li><a href="ca/Informacion.html" target="_blank">Informació</a></li>
+                <li><a href="#email">Email</a></li>
+                <li><a href="#telefono">Telèfon</a></li>
+                <li><a href="#ubicacion">Ubicació</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#servicios">Oficis i Professions <span>&#x25BC;</span></a>
+            <ul>
+                <li><a href="ca/Carpinteros.html" target="_blank">Fusters</a></li>
+                <li><a href="ca/Electricistas.html" target="_blank">Electricistes</a></li>
+                <li><a href="ca/Fontaneros.html" target="_blank">Lampistes</a></li>
+                <li><a href="ca/Frigoristas.html" target="_blank">Frigoristes</a></li>
+                <li><a href="ca/Herreros.html" target="_blank">Ferrers</a></li>
+                <li><a href="ca/Jardineria.html" target="_blank">Jardiners</a></li>
+                <li><a href="ca/Paleteria.html" target="_blank">Paletes</a></li>
+                <li><a href="ca/Pintores.html" target="_blank">Pintors</a></li>
+                <li><a href="ca/Pladur.html" target="_blank">Pladuristas</a></li>           
+            </ul>
+        </li>
+        
+        <li><a href="#productos">Serveis Particulars <span>&#x25BC;</span></a>
+            <ul>
+                <li><a href="es/Cuidados.html" target="_blank">Cuidat d'infants</a></li> 
+                <li><a href="es/Clases.html" target="_blank">Classes Particulars</a></li>
+                <li><a href="es/Limpieza.html" target="_blank">Neteja Domèstica</a></li>                             
+            </ul>
+        </li>
+
+        <li><a href="#productos">Serveis Professionals <span>&#x25BC;</span></a>
+            <ul>
+                <li><a href="es/ServiciosLegales.html" target="_blank">Advocats</a></li>
+                <li><a href="es/Chapistas.html" target="_blank">Xapistes</a></li>
+                <li><a href="es/Mecanicos.html" target="_blank">Mecànics</a></li>
+                <li><a href="es/Rotulistas.html" target="_blank">Rotulistas</a></li>                
+            </ul>
+        </li>
+
+        <li><a href="#nosotros">Comerços <span>&#x25BC;</span></a>
+            <ul>
+                <li><a href="es/Alimentacion.html" target="_blank">Alimentació</a></li>
+                <li><a href="es/Hoteles.html" target="_blank">Hotels</a></li>
+                <li><a href="es/Restaurantes.html" target="_blank">Restaurants</a></li>
+            </ul>
+        </li>
+  </nav>
+
+<main>
+  <div class="contenido-vacarisses">
+    <h2>Troba els Serveis que Necessites a Vacarisses</h2>
+    <p>
+      Vacarisses no és només un poble amb història i paisatges que enamoren; és també una comunitat viva, col·laborativa i plena de talent local. En aquesta plataforma reunim els professionals, comerciants i especialistes que formen part activa del dia a dia en el municipi. Aquí podràs trobar des de fusters, electricistes i pintors fins a jardiners, professors particulars, cuidadors o advocats, tots amb presència en la zona i compromís amb la qualitat.
+    </p>
+    <p>
+      El nostre objectiu és clar: facilitar l'accés directe a serveis de confiança i pròxims, promovent al mateix temps l'economia local. Creiem que connectar veïns amb oficis de confiança no sols millora la qualitat de vida, sinó que enforteix el teixit social del poble. Ja no fa falta buscar fos el que tenim dins: talent, dedicació i experiència al servei dels qui viuen o visiten Vacarisses.
+    </p>
+    <p>
+      A més, aquesta web està pensada per a créixer amb tu. Si ets professional, emprenedor o tens un comerç local, pots formar part d'aquest directori per a donar-te a conèixer i arribar a més persones interessades en els teus serveis. Com més visibles siguem, més fort serà la nostra comunitat.
+    </p>
+
+    <a href="es/vacarisas.html" class="boton-leer">Llegir més sobre Vacarisess</a>
+</div>
+
+</main>
+
+ <footer>
+   <div class="footer-content">
+    <p>&copy; 2025 Antonio Pavón. Tots els drets reservats.</p>
+    <p>
+      <a href="es/aviso-legal.html" target="_blank">Avís Legal</a> |
+      <a href="es/politica-privacidad.html" target="_blank">Política de Privacitat</a> |
+      <a href="es/politica-cookies.html" target="_blank">Política de Cookies</a>
+    </p>
+   </div>
+
+   <button id="btnSubir" aria-label="Subir al inicio" title="Subir al inicio">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+    <polyline points="18 15 12 9 6 15"></polyline>
+  </svg>
+</button>
+</footer>
+
+<div id="cookieBanner" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.9); color: white; padding: 20px; text-align: center; z-index: 9999;">
+  <p>Usamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestra <a href="politica-cookies.html" style="color: #E5C100; text-decoration: underline;">Política de Cookies</a>.</p>
+  <button id="acceptCookies" style="margin-top: 10px; padding: 10px 20px; background-color: #E5C100; border: none; border-radius: 5px; cursor: pointer;">Aceptar</button>
+</div>
+
+<script type="text/javascript" src="../js/servicios.js"></script>
+
+</body>
+</html>

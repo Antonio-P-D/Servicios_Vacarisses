@@ -6,7 +6,7 @@
     <title>Formulario</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="servicios.css">
+    <link rel="stylesheet" type="text/css" href="../css/servicios.css">
     <style type="text/css">
 .formulario-contacto-empresarial {
   background: #f8f9fa;
@@ -149,7 +149,7 @@ form select:focus {
 <header>
   <div class="contenedor-imagenes">
     <figure class="imagen bandera">
-      <img src="imagenes/Bandera_de_Vacarisses.png" alt="bandera de Vacarisses" />
+      <img src="../imagenes/Bandera_de_Vacarisses.png" alt="bandera de Vacarisses" />
     </figure> 
 
     <div class="cont-h1">
@@ -158,13 +158,17 @@ form select:focus {
     </div>
     
     <figure class="imagen torrota">
-      <img src="imagenes/la-torrota-de-vacarissesp.jpg" alt="imagen de la torrota de Vacarisses" />
+      <img src="../imagenes/la-torrota-de-vacarissesp.jpg" alt="imagen de la torrota de Vacarisses" />
     </figure>
   </div>
 
-  <div class="selector-idioma">
-  <button onclick="cambiarIdioma('es')">ES</button>
-  <button onclick="cambiarIdioma('ca')">CA</button>
+<div class="selector-idioma">
+  <form action="../es/index.html" method="get" style="display:inline;">
+  <button type="submit" class="btn-idioma">ES</button>
+  </form>
+  <form action="../ca/index.html" method="get" style="display:inline;">
+  <button type="submit" class="btn-idioma">CA</button>
+  </form>
 </div>
 
 </header>
@@ -325,7 +329,7 @@ form select:focus {
 <script>
   AOS.init();
 </script>
-<script type="text/javascript" src="servicios.js"></script>
+<script type="text/javascript" src="../js/servicios.js"></script>
 
 </body>
 </html>
