@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="servicios.css">
+    <style type="text/css">
+.formulario-contacto-empresarial {
+  background: #f8f9fa;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1a1a1a;
+}
+
+.formulario-contacto-empresarial .contenedor {
+  max-width: 800px;
+  margin: auto;
+}
+
+.formulario-contacto-empresarial h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.formulario-contacto-empresarial p {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+form fieldset {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px 25px;
+  margin-bottom: 30px;
+}
+
+form legend {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-top: 18px;
+  font-weight: 500;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #003366;
+  outline: none;
+}
+
+.checkbox {
+  display: flex;
+  align-items: start;
+  margin-top: 15px;
+}
+
+.checkbox input {
+  margin-right: 10px;
+}
+
+.boton-enviar {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.boton-enviar button {
+  background: #003366;
+  color: #fff;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.boton-enviar button:hover {
+  background: #00509e;
+}
+
+@media (max-width: 768px) {
+  .formulario-contacto-empresarial h2 {
+    font-size: 1.5rem;
+  }
+
+  form legend {
+    font-size: 1rem;
+  }
+}
+
+    </style>
+    </head>
+
+<body>
+<header>
+  <div class="contenedor-imagenes">
+    <figure class="imagen bandera">
+      <img src="imagenes/Bandera_de_Vacarisses.png" alt="bandera de Vacarisses" />
+    </figure> 
+
+    <div class="cont-h1">
+        <h1>Servicios en Vacarisses</h1>
+        <p class="subtitulo">Conectando personas con soluciones locales</p>
+    </div>
+    
+    <figure class="imagen torrota">
+      <img src="imagenes/la-torrota-de-vacarissesp.jpg" alt="imagen de la torrota de Vacarisses" />
+    </figure>
+  </div>
+
+  <div class="selector-idioma">
+  <button onclick="cambiarIdioma('es')">ES</button>
+  <button onclick="cambiarIdioma('ca')">CA</button>
+</div>
+
+</header>
+
+<button id="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+<nav id="menu">
+
+<nav>
+   <ul>
+        <li><a href="index.html">Inicio <span>&#x25BC;</span></a>
+            <ul>
+                <li><a href="quienes_somos.html" target="_blank">Quienes somos</a></li>
+                <li><a href="Informacion.html" target="_blank">Información</a></li>
+                <li><a href="#email">Email</a></li>
+                <li><a href="#telefono">Teléfono</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#servicios">Oficios y Profesiones <span>&#x25BC;</span></a>
+            <ul>
+                <li><a href="Carpinteros.html" target="_blank">Carpinteros</a></li>
+                <li><a href="Electricistas.html" target="_blank">Electricistas</a></li>
+                <li><a href="Fontaneros.html" target="_blank">Fontaneros</a></li>
+                <li><a href="Frigoristas.html" target="_blank">Frigoristas</a></li>
+                <li><a href="Herreros.html" target="_blank">Herreros</a></li>
+                <li><a href="Jardineria.html" target="_blank">Jardineros</a></li>
+                <li><a href="Paleteria.html" target="_blank">Paletas</a></li>
+                <li><a href="Pintores.html" target="_blank">Pintores</a></li>
+                <li><a href="Pladur.html" target="_blank">Pladuristas</a></li>           
+            </ul>
+        </li>
+        
+        <li><a href="#productos">Servicios Particulares <span>&#x25BC;</span></a>
+            <ul>
+                <li><a href="Cuidados.html" target="_blank">Cuidados Infantiles</a></li> 
+                <li><a href="Clases.html" target="_blank">Clases Particulares</a></li>
+                <li><a href="Limpieza.html" target="_blank">Limpieza Doméstica</a></li>                             
+            </ul>
+        </li>
+
+        <li><a href="#productos">Servicios Profesionales <span>&#x25BC;</span></a>
+            <ul>
+                <li><a href="ServiciosLegales.html" target="_blank">Abogados</a></li>
+                <li><a href="Chapistas.html" target="_blank">Chapistas</a></li>
+                <li><a href="Mecanicos.html" target="_blank">Mecánicos</a></li>
+                <li><a href="Rotulistas.html" target="_blank">Rotulistas</a></li>                
+            </ul>
+        </li>
+
+        <li><a href="#nosotros">Comercios <span>&#x25BC;</span></a>
+            <ul>
+                <li><a href="Alimentacion.html" target="_blank">Alimentación</a></li>
+                <li><a href="Hoteles.html" target="_blank">Hoteles</a></li>
+                <li><a href="Restaurantes.html" target="_blank">Restaurantes</a></li>
+            </ul>
+        </li>
+  </nav>
+  
+<main>
+      
+<section class="formulario-contacto-empresarial">
+  <div class="contenedor">
+    <h2>Solicita tu Página Web Profesional</h2>
+    <p>Completa este formulario con toda la información necesaria para crear tu página web a medida. Nuestro equipo se pondrá en contacto contigo en menos de 24h.</p>
+
+    <form action="https://formspree.io/f/tu-id" method="POST" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Información de Contacto</legend>
+
+        <label for="nombre">Nombre completo *</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico *</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefono">Teléfono *</label>
+        <input type="tel" id="telefono" name="telefono" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos de tu Empresa o Proyecto</legend>
+
+        <label for="empresa">Nombre de la empresa *</label>
+        <input type="text" id="empresa" name="empresa" required>
+
+        <label for="sector">Sector o actividad *</label>
+        <input type="text" id="sector" name="sector" required>
+
+        <label for="descripcion">Descripción del negocio *</label>
+        <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contenido para la Web</legend>
+
+        <label for="logo">Logotipo de la empresa</label>
+        <input type="file" id="logo" name="logo">
+
+        <label for="imagenes">Imágenes destacadas (hasta 5)</label>
+        <input type="file" id="imagenes" name="imagenes" multiple>
+
+        <label for="documentos">Textos o documentos adjuntos (PDF, Word...)</label>
+        <input type="file" id="documentos" name="documentos">
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferencias de Diseño</legend>
+
+        <label for="colores">Colores corporativos</label>
+        <input type="text" id="colores" name="colores" placeholder="Ej: #003366, blanco, gris...">
+
+        <label for="estilo">Estilo preferido</label>
+        <select id="estilo" name="estilo">
+          <option value="moderno">Moderno</option>
+          <option value="sobrio">Sobrio</option>
+          <option value="corporativo">Corporativo</option>
+          <option value="innovador">Innovador</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Consentimiento</legend>
+        <label class="checkbox">
+          <input type="checkbox" name="consentimiento" required>
+          Confirmo que tengo derechos sobre los contenidos enviados y autorizo su uso para la creación de la página web.
+        </label>
+      </fieldset>
+
+      <div class="boton-enviar">
+        <button type="submit">Enviar solicitud</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+  <footer>
+   <div class="footer-content">
+    <p>&copy; 2025 Antonio Pavón. Todos los derechos reservados.</p>
+    <p>
+      <a href="aviso-legal.html">Aviso Legal</a> |
+      <a href="politica-privacidad.html">Política de Privacidad</a> |
+      <a href="politica-cookies.html">Política de Cookies</a>
+    </p>
+   </div>
+
+   <button id="btnSubir" aria-label="Subir al inicio" title="Subir al inicio">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+    <polyline points="18 15 12 9 6 15"></polyline>
+  </svg>
+</button>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script type="text/javascript" src="servicios.js"></script>
+
+</body>
+</html>
